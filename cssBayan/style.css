@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(to left, #2e2bfd, #4070f1, #34cfe4);
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+}
+
+.container > input {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.meme-container {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    height: 100%;
+    margin: auto;
+    padding-bottom: 5px;
+    border-top: 3px slateblue solid;
+    cursor: pointer;
+}
+
+.meme-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.label {
+    display: none;
+    height: 1vw;
+    width: 1vw;
+    cursor: pointer;
+    background-image: url(./img/x_icon.svg);
+    background-repeat: no-repeat;
+    transition: ease-in-out .3s;
+}
+
+.img {
+    display: none;
+    width: 20vw;
+    height: auto;
+    margin: auto;
+}
+
+#slide1:checked ~ .label1 .meme1 .meme1-img {
+    display: block;
+    animation-duration: 0s;
+}
+#slide1:checked ~ .label1 .meme1 .meme-header .label {
+    transform: rotate(0.125turn);
+}
+#slide2:checked ~ .label1 .meme2 .meme2-img {
+    display: block;
+    animation-duration: 0s;
+}
+#slide2:checked ~ .label1 .meme2 .meme-header .label {
+    transform: rotate(0.125turn);
+}
+#slide3:checked ~ .label1 .meme3 .meme3-img {
+    display: block;
+    animation-duration: 0s;
+}
+#slide3:checked ~ .label1 .meme3 .meme-header .label {
+    transform: rotate(0.125turn);
+}
+#slide4:checked ~ .label1 .meme4 .meme4-img {
+    display: block;
+    animation-duration: 0s;
+}
+#slide4:checked ~ .label1 .meme4 .meme-header .label {
+    transform: rotate(0.125turn);
+}
+
+.meme1:hover .meme1-img {
+    display: block;
+    animation: scale 0.3s;
+}
+.meme1:hover .meme-header .label {
+    transform: rotate(0.125turn);
+}
+.meme1:target .meme1-header {
+    color: #34cfe4;
+}
+.meme2:hover .meme2-img {
+    display: block;
+    animation: scale 0.3s;
+}
+.meme2:hover .meme-header .label {
+    transform: rotate(0.125turn);
+}
+.meme3:hover .meme3-img {
+    display: block;
+    animation: scale 0.3s;
+}
+.meme3:hover .meme-header .label {
+    transform: rotate(0.125turn);
+}
+.meme4:hover .meme4-img {
+    display: block;
+    animation: scale 0.3s;
+}
+.meme4:hover .meme-header .label {
+    transform: rotate(0.125turn);
+}
+
+.container:hover .meme-header .label {
+    display: block;
+}
+
+@keyframes scale {
+    from {transform: scale(0);}
+    to {transform: scale(1);}
+}
