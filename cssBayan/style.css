@@ -53,7 +53,7 @@ body {
 
 .img {
     display: none;
-    width: 50%;
+    width: 40%;
     height: auto;
     margin: auto;
     padding-bottom: 1vw;
@@ -134,40 +134,25 @@ body {
         animation-duration: 0s;
     }
 
-    .meme1:hover .meme1-img {
-        display: block;
-        animation: scale 0.3s;
-    }
-    .meme1:hover .meme-header .icon-x {
-        transform: rotate(0.125turn);
-    }
-    .meme2:hover .meme2-img {
-        display: block;
-        animation: scale 0.3s;
-    }
-    .meme2:hover .meme-header .icon-x {
-        transform: rotate(0.125turn);
-    }
-    .meme3:hover .meme3-img {
-        display: block;
-        animation: scale 0.3s;
-    }
-    .meme3:hover .meme-header .icon-x {
-        transform: rotate(0.125turn);
-    }
-    .meme4:hover .meme4-img {
-        display: block;
-        animation: scale 0.3s;
-    }
-    .meme4:hover .meme-header .icon-x {
-        transform: rotate(0.125turn);
-    }
-
     .container:hover .meme-header .icon-x {
         opacity: 1;
     }
+
     .container:hover .meme-header {
         color: bisque;
+    }
+
+    .label:active .meme-header {
+        color: black;
+    }
+
+    .label:hover .meme-container .meme-header .icon-x  {
+        transform: rotate(0.125turn);
+    }
+
+    .label:hover .meme-container .img {
+        display: block;
+        animation: scale 0.3s;
     }
 }
 
