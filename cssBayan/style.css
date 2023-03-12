@@ -94,19 +94,19 @@ body {
 }
 
 @media (hover: none) {
-    #slide1:checked ~ .label .meme1 .meme1-img {
+    #slide1:checked ~ .label .meme1 .img {
         display: block;
         animation: scale 0.3s;
     }
-    #slide2:checked ~ .label .meme2 .meme2-img {
+    #slide2:checked ~ .label .meme2 .img {
         display: block;
         animation: scale 0.3s;
     }
-    #slide3:checked ~ .label .meme3 .meme3-img {
+    #slide3:checked ~ .label .meme3 .img {
         display: block;
         animation: scale 0.3s;
     }
-    #slide4:checked ~ .label .meme4 .meme4-img {
+    #slide4:checked ~ .label .meme4 .img {
         display: block;
         animation: scale 0.3s;
     }
@@ -117,19 +117,19 @@ body {
 }
 
 @media (hover: hover) {
-    #slide1:checked ~ .label .meme1 .meme1-img {
+    #slide1:checked ~ .label .meme1 .img {
         display: block;
         animation-duration: 0s;
     }
-    #slide2:checked ~ .label .meme2 .meme2-img {
+    #slide2:checked ~ .label .meme2 .img {
         display: block;
         animation-duration: 0s;
     }
-    #slide3:checked ~ .label .meme3 .meme3-img {
+    #slide3:checked ~ .label .meme3 .img {
         display: block;
         animation-duration: 0s;
     }
-    #slide4:checked ~ .label .meme4 .meme4-img {
+    #slide4:checked ~ .label .meme4 .img {
         display: block;
         animation-duration: 0s;
     }
