@@ -144,6 +144,11 @@ body {
 
     .label:active .meme-header {
         color: black;
+        opacity: 0.5;
+    }
+
+    .label:active .meme-container .img {
+        opacity: 0.5;
     }
 
     .label:hover .meme-container .meme-header .icon-x  {
